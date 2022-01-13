@@ -10,13 +10,13 @@ import NotFound from './components/NotFound';
 //styles
 import { GlobalStyle } from './GlobalStyle'
 
-const App = () => (
+const App: React.FC = () => (
   <Router>
     <Header/>
     <Routes>
       <Route path='/' element={<Home />}> </Route>
       <Route path='/:movieId' element={<Movie />}> </Route>
-      <Route path='/*' element={<NotFound j/>}> </Route>
+      <Route path='/*' element={<NotFound />}> </Route>
     </Routes>
     <GlobalStyle />
   </Router>
